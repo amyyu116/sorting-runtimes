@@ -135,31 +135,31 @@ and the DS major focuses on how to *use* these fast functions to accomplish inte
 For fun, compare the runtimes of your sorting algorithms to your partner's to see who has the fastest implementation.
 -->
 
-| timsort    | merge_sorted  | quick_sorted |
-| ------------- | ------------- | --------- | 
-len(xs)=2**0 | 4.63e-06 | 3.75e-06 | 2.97e-06 | 
-len(xs)=2**1 | 2.85e-06 | 1.12e-05 | 1.13e-05 |
-len(xs)=2**2 | 2.70e-06 | 1.80e-05 | 1.67e-05 |
-len(xs)=2**3 | 3.27e-06 | 3.80e-05 | 3.61e-05 |
-len(xs)=2**4 | 4.45e-06 | 8.13e-05 | 8.01e-05 |
-len(xs)=2**5 | 7.63e-06 | 1.55e-04 | 1.84e-04 |
-len(xs)=2**6 | 1.56e-05 | 3.92e-04 | 4.15e-04 |
-len(xs)=2**7 | 2.85e-05 | 8.44e-04 | 9.62e-04 |
-len(xs)=2**8 | 6.36e-05 | 1.84e-03 | 2.39e-03 |
-len(xs)=2**9 | 1.40e-04 | 4.19e-03 | 5.22e-03 |
-len(xs)=2**10 | 3.06e-04 | 9.08e-03 | 1.20e-02 |
-len(xs)=2**11 | 6.61e-04 | 1.97e-02 | 2.42e-02 |
-len(xs)=2**12 | 1.45e-03 | 4.48e-02 | 3.87e-02 |
-len(xs)=2**13 | 2.58e-03 | 7.42e-02 | 1.09e-01 |
-len(xs)=2**14 | 3.71e-03 | 1.94e-01 | 2.60e-01 |
-len(xs)=2**15 | 1.55e-02 | 4.35e-01 | 5.21e-01 |
-len(xs)=2**16 | 2.65e-02 | 8.22e-01 | 1.12e+00 |
-len(xs)=2**17 | 6.49e-02 | 1.93e+00 | 2.41e+00 |
-len(xs)=2**18 | 1.85e-01 | 4.19e+00 | 5.38e+00 |
-len(xs)=2**19 | 3.96e-01 | 8.76e+00 | 1.11e+01 |
-len(xs)=2**20 | 9.57e-01 | 1.89e+01 | 2.45e+01 |
-len(xs)=2**21 | 2.16e+00 | 3.96e+01 | 5.38e+01 |
-len(xs)=2**22 | 5.07e+00 | 8.36e+01 | 1.20e+02 |
+| list length  |   timsort   | merge_sorted  | quick_sorted |
+| ------------| ------------- | ------------- | --------- | 
+| len(xs)=2**0 | 4.63e-06 | 3.75e-06 | 2.97e-06 | 
+| len(xs)=2**1 | 2.85e-06 | 1.12e-05 | 1.13e-05 |
+| len(xs)=2**2 | 2.70e-06 | 1.80e-05 | 1.67e-05 |
+| len(xs)=2**3 | 3.27e-06 | 3.80e-05 | 3.61e-05 |
+| len(xs)=2**4 | 4.45e-06 | 8.13e-05 | 8.01e-05 |
+| len(xs)=2**5 | 7.63e-06 | 1.55e-04 | 1.84e-04 |
+| len(xs)=2**6 | 1.56e-05 | 3.92e-04 | 4.15e-04 |
+| len(xs)=2**7 | 2.85e-05 | 8.44e-04 | 9.62e-04 |
+| len(xs)=2**8 | 6.36e-05 | 1.84e-03 | 2.39e-03 |
+| len(xs)=2**9 | 1.40e-04 | 4.19e-03 | 5.22e-03 |
+| len(xs)=2**10 | 3.06e-04 | 9.08e-03 | 1.20e-02 |
+| len(xs)=2**11 | 6.61e-04 | 1.97e-02 | 2.42e-02 |
+| len(xs)=2**12 | 1.45e-03 | 4.48e-02 | 3.87e-02 |
+| len(xs)=2**13 | 2.58e-03 | 7.42e-02 | 1.09e-01 |
+| len(xs)=2**14 | 3.71e-03 | 1.94e-01 | 2.60e-01 |
+| len(xs)=2**15 | 1.55e-02 | 4.35e-01 | 5.21e-01 |
+| len(xs)=2**16 | 2.65e-02 | 8.22e-01 | 1.12e+00 |
+| len(xs)=2**17 | 6.49e-02 | 1.93e+00 | 2.41e+00 |
+| len(xs)=2**18 | 1.85e-01 | 4.19e+00 | 5.38e+00 |
+| len(xs)=2**19 | 3.96e-01 | 8.76e+00 | 1.11e+01 |
+| len(xs)=2**20 | 9.57e-01 | 1.89e+01 | 2.45e+01 |
+| len(xs)=2**21 | 2.16e+00 | 3.96e+01 | 5.38e+01 |
+| len(xs)=2**22 | 5.07e+00 | 8.36e+01 | 1.20e+02 |
 
 
 
@@ -240,7 +240,7 @@ Follow the instructions in the comments to provide a proper definition of `xs`,
 then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
-| x**2 | timsort | merge_sorted | quick_sorted |
+| 2**x | timsort | merge_sorted | quick_sorted |
 | ------ | ---------- | ------ | ---- |
 | 2**0 | 4.14e-06 | 3.35e-06 | 3.04e-06 |
 | 2**1 | 2.42e-06 | 1.02e-05 | 2.56e-05 |
