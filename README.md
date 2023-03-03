@@ -135,8 +135,8 @@ and the DS major focuses on how to *use* these fast functions to accomplish inte
 For fun, compare the runtimes of your sorting algorithms to your partner's to see who has the fastest implementation.
 -->
 
-| timsort    | merge_sorted  | quick_sorted |
-| ------------- | ------------- | --------- | 
+| 2**x    |      timsort    | merge_sorted  | quick_sorted |
+| --------| ------------- | ------------- | --------- | 
 len(xs)=2**0 | 4.63e-06 | 3.75e-06 | 2.97e-06 | 
 len(xs)=2**1 | 2.85e-06 | 1.12e-05 | 1.13e-05 |
 len(xs)=2**2 | 2.70e-06 | 1.80e-05 | 1.67e-05 |
@@ -241,7 +241,7 @@ then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
 | 2**x |  timsort | merge_sorted | quick_sorted |
-| ------ | ---------- | --- ---- |
+| ------ | ---------- | --- ---- | ----- |
 | 2**0 | 4.14e-06 | 3.35e-06 | 3.04e-06 |
 | 2**1 | 2.42e-06 | 1.02e-05 | 2.56e-05 |
 | 2**2 | 2.53e-06 | 1.38e-05 | 2.69e-05 |
