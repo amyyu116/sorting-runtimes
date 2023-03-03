@@ -267,7 +267,6 @@ Copy/paste the table into the README file below this line.
 | 2**22 | 1.21e-01 | 5.42e+01 | 7.93e+01 |
 | 2**23 | 2.49e-01 | 1.16e+02 | 1.63e+02 |
 
-
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
 This is because TimSort is designed to not have to resort already sorted data,
